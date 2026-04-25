@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimídia e Cadastro | F1 Wiki</title>
+    <link rel="icon" href="C:\Users\artur\OneDrive\Documentos\F1_PROJETODEINTERFACE\Icons\fav.icon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">F1<span>WIKI</span></div>
+    <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="equipes.html">Equipes</a></li>
+        <li><a href="multimidia.html">Multimídia</a></li>
+    </ul>
+</nav>
+
+<main class="content-padding container">
+    <h1>Experiência Multimídia</h1>
+    <p>Sinta a emoção da Fórmula 1 através dos sons dos motores históricos e vídeos dos melhores momentos das temporadas.</p>
+
+    <div class="multimedia-grid">
+        <section class="media-box">
+            <h3>Som do Motor V10</h3>
+            <audio controls>
+                <source src="../audios/motor.mp3" type="audio/mpeg">
+                Seu navegador não suporta a tag de áudio.
+            </audio>
+        </section>
+
+        <section class="media-box">
+            <h3>Melhores Momentos GP do Japão</h3>
+            <video width="100%" controls>
+                <source src="../videos/highlights.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </section>
+    </div>
+
+    <hr>
+
+    <section class="form-section">
+        <h2>Faça parte da nossa Comunidade de Fãs</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Ficha de Inscrição de Fã</legend>
+
+                <p>
+                    <label for="nome">1. Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                </p>
+
+                <p>
+                    <label for="email">2. E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                </p>
+
+                <p>
+                    <label for="piloto">3. Qual seu piloto favorito da história?</label><br>
+                    <select id="piloto" name="piloto">
+                        <option value="senna">Ayrton Senna</option>
+                        <option value="schumacher">Michael Schumacher</option>
+                        <option value="hamilton">Lewis Hamilton</option>
+                        <option value="verstappen">Max Verstappen</option>
+                        <option value="prost">Alain Prost</option>
+                        <option value="vettel">Sebastian Vettel</option>
+                        <option value="alonso">Fernando Alonso</option>
+                        <option value="raikkonen">Kimi Raikkonen</option>
+                    </select>
+                </p>
+
+                <p>
+                    4. Você já assistiu a uma corrida presencialmente?<br>
+                    <input type="radio" id="sim" name="presencial" value="sim" required>
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="nao" name="presencial" value="nao">
+                    <label for="nao">Não</label>
+                </p>
+
+                <p>
+                    5. Quais categorias você acompanha? (Marque ao menos uma):<br>
+                    <input type="checkbox" id="f1" name="cat" value="f1" required>
+                    <label for="f1">Fórmula 1</label>
+                    <input type="checkbox" id="f2" name="cat" value="f2">
+                    <label for="f2">Fórmula 2</label>
+                    <input type="checkbox" id="fe" name="cat" value="fe">
+                    <label for="fe">Fórmula E</label>
+                </p>
+
+                <p>
+                    <label for="cor">6. Se você fosse piloto, qual seria a cor do seu capacete?</label><br>
+                    <input type="color" id="cor" name="cor_capacete" value="#e10600">
+                </p>
+
+                <p>
+                    <label for="nivel">7. Nível de conhecimento sobre F1 (1 a 10):</label><br>
+                    <input type="range" id="nivel" name="nivel" min="1" max="10">
+                </p>
+
+                <p>
+                    <label for="data">8. Quando você começou a acompanhar?</label><br>
+                    <input type="date" id="data" name="data_inicio">
+                </p>
+
+                <p>
+                    <label for="foto">9. Mande uma foto da sua coleção (Opcional):</label><br>
+                    <input type="file" id="foto" name="foto_fan">
+                </p>
+
+                <p>
+                    <label for="msg">10. Deixe uma mensagem para a comunidade:</label><br>
+                    <textarea id="msg" name="mensagem" rows="4" style="width: 100%;"></textarea>
+                </p>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn-enviar">Enviar Cadastro</button>
+                    <button type="reset" class="btn-reset">Limpar Formulário</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <p><a href="../index.html">← Voltar para a Home</a></p>
+</main>
+
+<footer class="center-text">
+    <p>&copy; 2026 F1 Wiki - Projeto de Interface</p>
+</footer>
+
+</body>
+</html>
